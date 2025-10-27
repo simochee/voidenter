@@ -16,6 +16,7 @@
   "devDependencies": {
     "@tsconfig/node24": "^24.0.1",
     "@types/node": "^24.9.1",
+    "semantic-release": "^25.0.1",
     "unbuild": "^3.6.1"
   },
   "files": [
