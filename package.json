@@ -10,6 +10,7 @@
     "build": "unbuild"
   },
   "dependencies": {
+    "consola": "^3.4.2",
     "node-pty": "^1.0.0"
   },
   "devDependencies": {
@@ -17,7 +18,9 @@
     "@types/node": "^24.9.1",
     "unbuild": "^3.6.1"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "bin": {
     "voidenter": "./dist/cli.mjs"
   },
