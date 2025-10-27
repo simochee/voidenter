@@ -12,6 +12,33 @@ When you press Enter twice in quick succession (within 300ms), only the second E
 
 ## Installation
 
+### Prerequisites
+
+This package uses `node-pty` which requires native compilation. You need to have the following tools installed:
+
+**macOS:**
+- Xcode Command Line Tools: `xcode-select --install`
+
+**Linux:**
+- Python (v3.6 or later)
+- `make`
+- C/C++ compiler toolchain (e.g., GCC)
+  ```bash
+  # Debian/Ubuntu
+  sudo apt-get install -y make python3 build-essential
+
+  # Fedora/RHEL/CentOS
+  sudo yum install -y make python3 gcc-c++
+  ```
+
+**Windows:**
+- [windows-build-tools](https://www.npmjs.com/package/windows-build-tools)
+  ```bash
+  npm install --global windows-build-tools
+  ```
+
+### Install
+
 ```bash
 npm install -g voidenter
 ```
