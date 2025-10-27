@@ -1,0 +1,5 @@
+{
+  "extends": "@tsconfig/node24",
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
