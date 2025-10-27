@@ -1,33 +1,35 @@
 {
-  "name": "voidenter",
-  "version": "0.1.0",
-  "description": "A CLI wrapper that disables Enter",
-  "type": "module",
-  "repository": "simochee/voidenter",
-  "license": "MIT",
-  "scripts": {
-    "stub": "unbuild --stub",
-    "build": "unbuild"
-  },
-  "dependencies": {
-    "consola": "^3.4.2",
-    "node-pty": "^1.0.0"
-  },
-  "devDependencies": {
-    "@tsconfig/node24": "^24.0.1",
-    "@types/node": "^24.9.1",
-    "semantic-release": "^25.0.1",
-    "unbuild": "^3.6.1"
-  },
-  "files": [
-    "dist"
-  ],
-  "bin": {
-    "voidenter": "./dist/cli.mjs"
-  },
-  "types": "./dist/index.d.mts",
-  "exports": {
-    "types": "./dist/index.d.mts",
-    "default": "./dist/index.mjs"
-  }
+	"name": "voidenter",
+	"version": "0.1.0",
+	"description": "A CLI wrapper that disables Enter",
+	"repository": "simochee/voidenter",
+	"license": "MIT",
+	"type": "module",
+	"exports": {
+		"types": "./dist/index.d.mts",
+		"default": "./dist/index.mjs"
+	},
+	"types": "./dist/index.d.mts",
+	"bin": {
+		"voidenter": "./dist/cli.mjs"
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "unbuild",
+		"lint": "biome check",
+		"stub": "unbuild --stub"
+	},
+	"dependencies": {
+		"consola": "^3.4.2",
+		"node-pty": "^1.0.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.3.1",
+		"@tsconfig/node24": "^24.0.1",
+		"@types/node": "^24.9.1",
+		"semantic-release": "^25.0.1",
+		"unbuild": "^3.6.1"
+	}
 }
